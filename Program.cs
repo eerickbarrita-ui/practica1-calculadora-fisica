@@ -1,4 +1,5 @@
 ﻿namespace CalculadoraFisica;
+// Programa principal de la calculadora de cinemática
 class Program
 {
     static void Main(string[] args)
