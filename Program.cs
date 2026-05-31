@@ -25,7 +25,7 @@ class Program
     Console.Clear();
 
     Console.WriteLine("================================");
-    Console.WriteLine(" CALCULADORA DE CINEMÁTICA ");
+    Console.WriteLine(" CALCULADORA DE CINEMÁTICA V1 ");
     Console.WriteLine("================================");
     Console.WriteLine("1. Calcular Velocidad");
     Console.WriteLine("2. Calcular Distancia");
