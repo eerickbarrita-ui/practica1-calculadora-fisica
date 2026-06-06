@@ -2,7 +2,7 @@ Práctica 2: Simulación de Punteros en C#
 
 Datos del Alumno
 
-Nombre: José Erick Eduardo Gonzalez Barita
+Nombre: Erick Eduardo Gonzalez Barita
 Matrícula: 333010136
 Materia: Estructura de Datos
 Práctica: Práctica 2 – Simulación de Punteros en C#
