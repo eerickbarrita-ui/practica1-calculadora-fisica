@@ -2,25 +2,39 @@ namespace CalculadoraFisica;
 
 /// <summary>
 /// Módulo de cálculos físicos de cinemática.
-/// Todas las funciones son puras: mismo input = mismo output.
 /// </summary>
 static class Calculos
 {
-    /// <summary>Calcula velocidad: v = d / t</summary>
-    public static double CalcularVelocidad(double distanciaMetros, double tiempoSegundos)
+    /// <summary>
+    /// Calcula velocidad usando out: v = d / t.
+    /// </summary>
+    public static void CalcularVelocidad(
+        double distanciaMetros,
+        double tiempoSegundos,
+        out double velocidadMs)
     {
-        return distanciaMetros / tiempoSegundos;
+        velocidadMs = distanciaMetros / tiempoSegundos;
     }
 
-    /// <summary>Calcula distancia: d = v * t</summary>
-    public static double CalcularDistancia(double velocidadMs, double tiempoSegundos)
+    /// <summary>
+    /// Calcula distancia usando ref: d = v * t.
+    /// </summary>
+    public static void CalcularDistancia(
+        ref double distanciaMetros,
+        double velocidadMs,
+        double tiempoSegundos)
     {
-        return velocidadMs * tiempoSegundos;
+        distanciaMetros = velocidadMs * tiempoSegundos;
     }
 
-    /// <summary>Calcula tiempo: t = d / v</summary>
-    public static double CalcularTiempo(double distanciaMetros, double velocidadMs)
+    /// <summary>
+    /// Calcula tiempo usando out: t = d / v.
+    /// </summary>
+    public static void CalcularTiempo(
+        double distanciaMetros,
+        double velocidadMs,
+        out double tiempoSegundos)
     {
-        return distanciaMetros / velocidadMs;
+        tiempoSegundos = distanciaMetros / velocidadMs;
     }
 }
